@@ -1,0 +1,8 @@
+Contactweg 30G, 1014 AN Amsterdam
+
+Straat         : Contactweg string	
+Bedrijfsnummer : 30G  int
+Postcode       : 1014 AN int 
+Plaats         : Amsterdam string
+
+Omdat AdresID belangrijk is
