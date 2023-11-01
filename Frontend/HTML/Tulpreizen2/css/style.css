@@ -1,0 +1,333 @@
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html {
+    font-size: 62.5%; /* 1rem = 10px */
+    scroll-behavior: smooth;
+  }
+  
+  a, a:visited, a:link {
+    color: #eee;
+    text-decoration: none;
+  }
+  
+  body {
+    font-family: "Lato", sans-serif;
+    font-size: 2rem;
+    background: #194f5f;
+  }
+  
+  .gallerij__button, .header__button, .nav__button {
+    width: 11rem;
+    padding: 1rem;
+    font-size: 80%;
+    background: #2f90ff;
+    border: none;
+    color: #EEE;
+    border-radius: 0.5rem;
+    text-transform: uppercase;
+  }
+  
+  .gallerij__button:hover, .header__button:hover, .nav__button:hover {
+    cursor: pointer;
+    background: #2f82ff;
+    transition: 0.2s;
+  }
+  
+  .gallerij__header, .kenmerken__header, .over__header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .gallerij__h2, .kenmerken__h2, .over__h2, .header__h2 {
+    font-family: "roboto", cursive;
+    font-size: 350%;
+    color: #EEE;
+  }
+  
+  .socials, .gallerij, .kenmerken, .over {
+    height: 80rem;
+    border-bottom: 0.2rem solid #458ce9;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+  
+  .kenmerken__logo, .header__logo, .nav__logo {
+    font-size: 250%;
+    padding: 1.5rem;
+    color: #EEE;
+    border: 0.4rem solid #2f82ff;
+    border-radius: 50%;
+  }
+  
+  .nav {
+    width: 100%;
+    min-height: 7rem;
+    background: rgba(15, 90, 96, 0.7);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #EEE;
+    padding: 2rem;
+    text-transform: uppercase;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+  
+  .nav__list {
+    display: flex;
+    list-style: none;
+    gap: 4rem;
+    font-size: 120%;
+  }
+  
+  .header {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+  }
+  
+  .header__figure {
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(to bottom right, rgba(45, 118, 136, 0.8), 80%, rgba(69, 140, 233, 0.5)), url("/img/webp/foto10.webp");
+    background-position: bottom;
+    background-size: cover;
+  }
+  
+  .header__figure > div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    justify-content: center;
+    align-items: center;
+    color: #EEE;
+    text-align: center;
+  }
+  
+  .header__h1 {
+    font-family: "roboto", cursive;
+    font-size: 500%;
+  }
+  
+  .over__columns {
+    display: flex;
+    gap: 4rem;
+    justify-content: center;
+    height: 100%;
+  }
+  
+  .over__column {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  
+  .over__p {
+    width: 55ch;
+    color: #EEE;
+  }
+  
+  .over__figure {
+    position: relative;
+    width: 60rem;
+    height: 60rem;
+  }
+  
+  .over__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0.5rem;
+  }
+  
+  .kenmerken__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    height: 80%;
+    padding: 4rem;
+  }
+  
+  .kenmerken__listItem {
+    list-style: none;
+    color: #EEE;
+    flex-shrink: 0;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .kenmerken__p {
+    width: 30ch;
+    text-align: center;
+  }
+  
+  .kenmerken__logo {
+    font-size: 180%;
+    padding: 2rem;
+  }
+  
+  .gallerij__header {
+    padding-bottom: 2rem;
+  }
+  
+  .gallerij__fotos {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .gallerij__foto {
+    width: 25%;
+    height: 40rem;
+    list-style: none;
+    position: relative;
+  }
+  
+  .gallerij__img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+  
+  .gallerij__gradient {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom right, rgba(28, 127, 155, 0.8), 80%, rgba(69, 219, 233, 0.5));
+    transform: scaleX(0);
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.8s;
+    transform-origin: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .gallerij__button {
+    opacity: 0;
+    transition-delay: 0.8s;
+    transition-duration: 0.2s;
+  }
+  
+  .gallerij__foto:hover .gallerij__button {
+    opacity: 1;
+  }
+  
+  .gallerij__foto:hover .gallerij__gradient {
+    transform: scale(1);
+  }
+  
+  .socials {
+    margin-top: 5rem;
+    background: #194f5f;
+  }
+  
+  .socials__list {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    padding-bottom: 4rem;
+  }
+  
+  .socials__listItem {
+    list-style: none;
+    font-size: 250%;
+    padding: 1.5rem;
+    color: #EEE;
+    border-radius: 50%;
+    transition: 0.5s;
+  }
+  
+  .socials__listItem:hover {
+    cursor: pointer;
+    color: #2fd5ff;
+    padding: 2rem;
+    background: #EEE;
+  }
+  
+  @media screen and (max-width: 75rem) {
+    body {
+      font-size: 1.6rem;
+    }
+    .header {
+      height: 140rem;
+    }
+    .over {
+      min-height: 120rem;
+    }
+    .over__header {
+      height: 10%;
+    }
+    .over__columns {
+      flex-direction: column;
+      height: 90%;
+    }
+    .over__column {
+      height: 60%;
+    }
+    .over__p {
+      width: 100%;
+    }
+    .over__figure {
+      position: relative;
+      width: 100%;
+      height: 40%;
+    }
+    .kenmerken {
+      min-height: 130rem;
+    }
+    .kenmerken__listItem {
+      width: 100%;
+    }
+    .gallerij {
+      height: auto;
+    }
+    .gallerij__fotos {
+      flex-wrap: wrap;
+    }
+    .gallerij__foto {
+      height: 20rem;
+      width: 100%;
+    }
+    .gallerij__foto:hover .gallerij__button {
+      opacity: 0;
+    }
+    .gallerij__foto:hover .gallerij__gradient {
+      transform: scale(0);
+    }
+    .socials {
+      height: auto;
+    }
+    .socials__list {
+      padding-bottom: 0rem;
+    }
+  }
+  @media screen and (max-width: 50rem) {
+    .nav__list {
+      flex-direction: column;
+    }
+    .over__columns {
+      padding: 2rem;
+    }
+  }
+  
+  /*# sourceMappingURL=style.css.map */

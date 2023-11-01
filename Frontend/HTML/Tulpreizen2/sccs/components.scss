@@ -1,0 +1,47 @@
+@use 'colors';
+@use 'fonts';
+
+%cta{
+    width: 11rem;
+    padding: 1rem;
+    font-size: 80%;
+    background: colors.$blue;
+    border: none;
+    color: colors.$font-color;
+    border-radius: 0.5rem;
+    text-transform: uppercase;
+}
+
+%cta:hover{
+    cursor: pointer;
+    background: darken(colors.$blue, 10%);
+    transition: 0.2s;
+}
+
+%header{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+
+%h2Handwriting{
+    font-family: fonts.$handwriting;
+    font-size: 380%;
+    color: colors.$font-color
+}
+
+%section{
+    height: 80rem;
+    border-bottom: colors.$border-blue-small;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+%icon{
+    font-size: 250%;
+    padding: 1.5rem;
+    color: colors.$font-color;
+    border: colors.$border-blue;
+    border-radius: 50%;
+}
