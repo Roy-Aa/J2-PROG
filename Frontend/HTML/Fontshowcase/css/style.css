@@ -25,7 +25,7 @@ body {
   flex-direction: column;
   justify-content: flex-start;
   padding: 4rem;
-  font-family: "Noto Sans", sans-serif;
+  font-family: 'Cabin', sans-serif;
 }
 
 @keyframes popup {
@@ -156,11 +156,11 @@ body {
 }
 .showCase__output--sansSerif {
   font-weight: 400;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: 'Kenia', sans-serif;
 }
 .showCase__output--Serif {
   font-weight: 400;
-  font-family: monospace;
+  font-family: 'Oswald', sans-serif;
 }
 
 .toggle__input {
