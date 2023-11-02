@@ -1,17 +1,16 @@
 <?php
+include 'dbdata.php';
 
-include_once("dbdata.php");
-function ConnectToDatabase($databaseServer, $user, $pass, $schema)
-{
-    $conn = new mysqli($databaseServer, $user, $pass, $schema);
+$conn = ConnectToDataBase($schema, $user, $pass, $host);
+
+function ConnectToDataBase($schema, $user, $password, $host) {
+    $conn = new mysqli ($host, $user, $password, $schema) ;
     if($conn->connect_error)
     {
-        echo "error try again\r\n";
+        echo "error/r/n";
     }
-
-    echo "connected to database\r\n";
+    echo "connected/r/n";
     return $conn;
-}
 
-$conn = ConnectToDatabase($databaseServer, $user, $pass, $schema);
+}
 ?>

@@ -4,8 +4,8 @@ $envSettings = []; // Maakt een function
         $envSettings = parse_ini_file(dirname(__FILE__).'/.env'); // Run file???
     }
 
-$databaseServer = $envSettings["DB_SCHEMA_NAME"];
-$user = $envSettings["DB_USER"];
-$pass = $envSettings["DB_PASSWORD"];
-$schema = $envSettings["DB_HOST"];
+    $schema = $envSettings["DB_SCHEMA_NAME"];
+    $user = $envSettings["DB_USER"];
+    $pass = $envSettings["DB_PASSWORD"];
+    $host = $envSettings["DB_HOST"];
 ?>

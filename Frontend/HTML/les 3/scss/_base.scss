@@ -1,0 +1,11 @@
+@use "./abstract/mixins";
+@use "./abstract/colors";
+body{
+    background: #219F94;
+    @include mixins.flexCenter;
+    min-height: 100vh;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 4rem;
+    font-family: 'Noto Sans', sans-serif;
+}
