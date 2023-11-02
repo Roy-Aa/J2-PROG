@@ -18,9 +18,9 @@
     <nav class="nav">
         <i class="fa-solid fa-seedling nav__logo"></i>
         <ul class="nav__list">
-            <li class="nav__listItem"><a href="" class="nav__link"></a>Over</li>
-            <li class="nav__listItem"><a href="" class="nav__link"></a>Kenmerken</li>
-            <li class="nav__listItem"><a href="" class="nav__link">Gallerij</a></li>
+            <li class="nav__listItem"><a href="#over" class="nav__link">Over</a></li>
+            <li class="nav__listItem"><a href="#kenmerken" class="nav__link">Kenmerken</a></li>
+            <li class="nav__listItem"><a href="#gallerij" class="nav__link">Gallerij</a></li>
         </ul>
         <button class="nav__button">Boek nu!</button>
     </nav>
@@ -36,7 +36,7 @@
     </header>
     <section class="over">
         <header class="over__header">
-            <h2 class="over__h2">Over Tulpreizen</h2>
+            <h2 id="over" class="over__h2">Over Tulpreizen</h2>
         </header>
         <div class="over__columns">
             <div class="over__column">
@@ -71,11 +71,11 @@
                 </p>
             </div>
             <figure class="over__figure">
-                <img class="over__img" src="img/webp/header_img.webp" alt="">
+                <img class="over__img" src="img/webp/headerpic.webp" alt="">
             </figure>
         </div>
     </section>
-    <section class="kenmerken">
+    <section id="kenmerken" class="kenmerken">
         <header class="kenmerken__header">
             <h2 class="kenmerken__h2">Onze Kenmerken </h2>
         </header>
@@ -110,7 +110,7 @@
             </li>
         </ul>
     </section>
-    <section class="gallerij">
+    <section id="gallerij" class="gallerij">
         <header class="gallerij__header">
             <h2 class="gallerij__h2">Gallerij</h2>
         </header>
@@ -152,7 +152,7 @@
                 </section>
             </li>
             <li class="gallerij__foto">
-                <img src="img/webp/foto12webp" alt="" class="gallerij__img">
+                <img src="img/webp/foto12.webp" alt="" class="gallerij__img">
                 <section class="gallerij__gradient">
                     <button class="gallerij__button">Boek nu!</button>
                 </section>
@@ -189,21 +189,13 @@
             </li>
         </ul>
     </section>
-    <footer class="contact">
-        <ul class="contact__list">
-            <li class="contact__listItem">
-                <p>Contact</p>
-            </li>
-            <li class="contact__listItem">
-                <P>Boek nu</P>
-            </li>
-            <li class="contact__listItem">
-                <p>Over ons</p>
-            </li>
-            <li class="contact__listItem">
-                <p>Reviews</p>            
-            </li>
-        </ul>
+    
+    <footer class="footerblock">
+        <figure><a class="footerblock-inner-text" href="#">Tulpreizen</a></figure>
+        <figure><a class="footerblock-inner-text" href="#over">Over Tulpreizen</a></figure>
+        <figure><a class="footerblock-inner-text" href="#kenmerken">Onze Kenmerken</a></figure>
+        <figure><a class="footerblock-inner-text" href="#gallerij">Gallerij</a></figure>
     </footer>
 </body>
+
 </html>
